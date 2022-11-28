@@ -1,0 +1,6 @@
+.newsCard{
+    min-height: 450px;
+}
+.newsCard .card-img-top{
+    height: 235px;
+}
