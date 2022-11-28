@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { Col } from "react-bootstrap";
 
-export class NewsItem extends Component {
-  render() {
-    let { title, description, imageUrl, newsUrl, author, date } = this.props;
+const NewsItem = (props) => {
+    let { title, description, imageUrl, newsUrl, author, date } = props;
     return (
         <Col md={4}>
           <Card className="newsCard">
@@ -19,7 +18,6 @@ export class NewsItem extends Component {
           </Card>
         </Col>
     );
-  }
 }
 
 export default NewsItem;
